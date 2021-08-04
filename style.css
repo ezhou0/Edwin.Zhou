@@ -14,7 +14,7 @@ height: 60px;
 -webkit-perspective-origin: 50% -500px;
 }
 .single-box {
-background-image: url(https://i.postimg.cc/4Nwn4CfF/1.jpg);
+
 background-size: cover;
 display: block;
 position: absolute;
@@ -30,26 +30,31 @@ border: 3px solid #fff;
 -webkit-animation: rotate 10s infinite linear;
 }
 .side-front { 
+background:green;
 -webkit-transform: translateZ(25px);
 }
 .side-back { 
+    background:blue;
 -webkit-transform: rotateY(180deg) translateZ(25px);
 }
 .side-top {
 background: red;
 -webkit-transform: rotateX(90deg) translateZ(25px);
 }
-.side-bottom { 
+.side-bottom {
+    background:purple; 
 -webkit-transform: rotateX(-90deg) translateZ(25px); 
 }
 .side-left { 
+    background:yellow;
 -webkit-transform: rotateY(-90deg) translateZ(25px); 
 }
 .side-right { 
+    background:orange;
 -webkit-transform: rotateY(90deg) translateZ(25px); 
 }
 
 @-webkit-keyframes rotate {
 0% { -webkit-transform: rotateY(0)); }
-100% { -webkit-transform: rotateY(360deg); }
+100% { -webkit-transform: rotateY(360deg) rotateZ(360deg); }
 }
