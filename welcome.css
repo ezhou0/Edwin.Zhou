@@ -5,6 +5,7 @@
 }
 
 .welcome-body{
+    padding-top: 80px;
     display: grid; 
     grid-template-areas: 
     'image text' ;

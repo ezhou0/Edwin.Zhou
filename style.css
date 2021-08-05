@@ -9,13 +9,14 @@ body{
       /* background-image: -webkit-linear-gradient(250deg, white , #004E95 ); */
 }
 .myPicWrap{
-    background:orange;
-   
+    background-color:rgb(227, 139, 245, .5);
+    
     height: 340px;
     width: 340px;
-    border-radius: 50px;
+  border-radius: 50px 125px;
 }
 .myPic{
+    
     height: 300px;
     border-radius: 50%;
     padding:20px;
