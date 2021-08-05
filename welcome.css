@@ -1,6 +1,7 @@
 .splash-container{
   
   background-repeat: no-repeat;
+  color: white;
 }
 
 .welcome-body{
@@ -31,4 +32,15 @@
     grid-area:'image';
     align-self: center;
     justify-self: center;
+}
+
+.background-circle{
+   right: -15em;
+    bottom: -20em;
+    position: fixed;
+    background-image: -webkit-linear-gradient(230deg,rgb(227, 139, 245),rgb(178, 178, 228)) ;
+    height: 70em;
+    width:70em;
+    border-radius: 50%;
+    z-index: -1;
 }
