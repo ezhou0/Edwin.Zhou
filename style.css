@@ -1,5 +1,12 @@
 body{
-    background: white;
+  /* background: white; */
+  
+    /* background: white; */
+     height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+      background-image: -webkit-linear-gradient(250deg, white , #004E95 );
 }
 .myPicWrap{
     background:orange;
