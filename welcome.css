@@ -1,7 +1,7 @@
 .splash-container{
   
   background-repeat: no-repeat;
-  color: white;
+  
 }
 
 .welcome-body{
@@ -20,15 +20,32 @@
 }
 
 .welcome-text-1{
+     color: rgb(140, 74, 194);
     font-size: 30px;
 }
 .welcome-text-2{
+    color: white;
     font-size: 90px;
 }
 .welcome-text-3{
+    color: rgb(107, 107, 107);
     font-size: 50px;
 }
 
+.myPicWrap{
+    background-color:rgb(227, 139, 245, .5);
+    
+    height: 490px;
+    width: 490px;
+  border-radius: 25px 150px;
+}
+.myPic{
+    
+    height: 450px;
+    border-radius: 50%;
+    padding:20px;
+   
+}
 .myPicWrap{
     grid-area:'image';
     align-self: center;
