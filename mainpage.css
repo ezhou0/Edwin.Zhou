@@ -41,6 +41,7 @@
   animation-duration: 50s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  transition: all 1.5s ease-in;
 }
 
 @keyframes rotate {
@@ -48,7 +49,7 @@
     transform: rotate3d(0, 0, 0, 0);
   }
   100% {
-    transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(1 , 1, 0, 360deg);
     ;
   }
 }
@@ -95,6 +96,28 @@
 .main-box-area {
   /* transform: rotateX(90deg) rotateY(90deg); */
 }
+
+
+/* // controls  */
+.main-box-area.show-front{
+    transform: rotateY(0deg);
+}
+.main-box-area.show-left{
+    transform: rotateY(90deg);
+}
+.main-box-area.show-right{
+    transform: rotateY(-90deg);
+}
+.main-box-area.show-back{
+    transform: rotateY(-180deg);
+}
+.main-box-area.show-top{
+    transform: rotateX(-90deg);
+}
+.main-box-area.show-bottom{
+    transform: rotateX(90deg);
+}
+
 
 
 
