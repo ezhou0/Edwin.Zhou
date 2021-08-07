@@ -28,7 +28,7 @@
 }
 
 .main-cube-wrapper{
-    background:darkblue;
+   background: rgb(178, 178, 228);
     position: absolute;
     height: 100vh;
     width:100vw;
@@ -89,12 +89,12 @@
 }
 
 #main-box-top {
-  transform: translateY(50vh) rotateX(90deg);
+  transform: translateY(50vh) rotateX(-90deg)  ;
  
 }
 
 #main-box-bottom {
-  transform: translateY(-50vh) rotateX(-90deg);
+  transform: translateY(-50vh) rotateX(90deg) ;
  
 }
 
