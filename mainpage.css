@@ -18,7 +18,7 @@
 
 .navbar{
     grid-area: navbar;
-    background-color: black;
+   
     width:100%;
    
     z-index: 1000;
@@ -28,12 +28,14 @@
 }
 
 .main-cube-wrapper{
-   background: rgb(178, 178, 228);
+   /* background: rgb(178, 178, 228); */
+   background: blue;
     position: absolute;
     height: 100vh;
     width:100vw;
     padding:0;
     margin: 0;
+    overflow:hidden;
    
 }
 
@@ -41,10 +43,10 @@
   position: relative;
   transform-style: preserve-3d;
   /* animation-name: rotate; */
-  animation-duration: 50s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  transition: all 1.5s ease-in;
+  transition: all 2s ease-in-out;
 }
 
 @keyframes rotate {
@@ -63,39 +65,40 @@
   width: 100vw;
   height: 100vh;
   border: 1px solid #262626;
-  background: rgb(178, 178, 228);
+  /* background: rgb(178, 178, 228); */
 
 
 }
 
 #main-box-front {
-  transform: translateZ(50vh);
+  transform: translateZ(50vw);
+ background:-webkit-linear-gradient(45deg,#f8dcc6, #d9b092);
   
 }
 
 #main-box-back {
- transform: translateZ(-50vh) rotateY(180deg);
- 
+ transform: translateZ(-50vw) rotateY(180deg);
+  background: #292a2d;
 }
 
 #main-box-right {
    transform: translateX(50vw) rotateY(90deg);
- 
+     background: #f8f8f8;
 }
 
 #main-box-left {
   transform: translateX(-50vw) rotateY(-90deg);
-  
+   background: #f5f5f5;
 }
 
 #main-box-top {
-  transform: translateY(50vh) rotateX(-90deg)  ;
- 
+  transform: translateY(50vw) rotateX(-90deg)  ;
+  background: #f5f5f5;
 }
 
 #main-box-bottom {
-  transform: translateY(-50vh) rotateX(90deg) ;
- 
+  transform: translateY(-50vw) rotateX(90deg) ;
+     background: #f5f5f5;
 }
 
 .main-box-area {
@@ -103,14 +106,15 @@
 }
 
 .box-content{
-    width: 80vw;
-    height: 80vh;
-    border: 5px solid black;
-    border-radius: 25px;
-    margin: auto;
+    width: 90vw;
+    height: 100vh;
+    /* border-right: 2px solid black;
+    border-left: 2px solid black; */
    
-    
+    margin: auto; 
 }
+
+
 
 
 /* // controls  */
@@ -118,7 +122,7 @@
     transform: rotateY(0deg);
 }
 .main-box-area.show-left{
-    transform: rotateY(90deg);
+    transform: rotateY(-270deg);
 }
 .main-box-area.show-right{
     transform: rotateY(-90deg);
@@ -127,11 +131,77 @@
     transform: rotateY(-180deg);
 }
 .main-box-area.show-top{
-    transform: translateY(50vh) rotateX(-90deg) ;
+    transform:   translateY(100vw) rotateX(-90deg);
 }
 .main-box-area.show-bottom{
-    transform: translateY(50vh)rotateX(90deg);
+    transform: rotateX(90deg) translateY(50vw);
 }
+/* about me page */
+
+#about-me{
+    /* background:#f5d8c1; */
+    display:grid;
+    grid-template-areas: 'img text';
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about-me{
+    grid: text;
+}
+.about-me-img{
+    grid: img;
+}
+
+.portrait{
+    
+    height:600px;
+    border-radius:50px;
+    opacity: .8;
+
+}
+
+/* projects */
+#projects{
+    display: grid;
+    grid-template-areas: 'title'
+    'content';
+    grid-template-rows: 100px 1fr;
+    justify-content: center;
+    align-items: center;
+   
+}
+.title-div{
+   text-align: center;
+    grid: title;
+}
+ul{
+    padding-left: 245px;
+   list-style-type: none; 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: center;
+}
+.projects-container{
+    width: 100vw;
+   grid: content;
+  
+}
+
+.project-div{
+    width: 300px;
+    height: 400px;
+    border: 1px solid rgb(197, 197, 197);
+    background: rgb(250, 248, 248);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 2px black;
+}
+/* skills */
+#skills{
+    color:#a9a9b3;
+}
+/* links */
 
 
 
