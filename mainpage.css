@@ -77,7 +77,8 @@
 
 #main-box-back {
  transform: translateZ(-50vw) rotateY(180deg);
-  background: #292a2d;
+  /* background: #292a2d; */
+   background: #f8f8f8;
 }
 
 #main-box-right {
@@ -244,12 +245,31 @@ a:hover, a:active { text-decoration: none; }
 /* skills */
 #skills{
     color:#a9a9b3;
+    overflow: scroll;
 }
 
 .tech{
-    width: 200px;
-    height: 200px;
-    border-radius: 25px;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 30px;
+    border: 2px solid gray;
+    
+}
+
+.tech-content-container{
+   overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;  
+}
+.tech-img-container{
+    
+  
+}
+.tech-container{
+    margin: 30px;
+   
 }
 /* links */
 
