@@ -168,7 +168,7 @@
     grid-template-rows: 200px 1fr;
     justify-content: center;
     align-items: center;
-   
+    overflow: scroll;
 }
 .title-div{
    text-align: center;
@@ -193,8 +193,8 @@
 }
 
 .project-div{
-    width: 300px;
-    height: 400px;
+    width: 40vh;
+    height: 55vh;
     border: 1px solid rgb(197, 197, 197);
     background: rgb(250, 248, 248);
     border-radius: 25px;
@@ -249,11 +249,15 @@ a:hover, a:active { text-decoration: none; }
 }
 
 .tech{
-    width: 20vh;
-    height: 20vh;
+    width: 30vh;
+    height: 30vh;
     border-radius: 30px;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
     
+}
+
+.need-border{
+     border: 2px solid gray;
 }
 
 .tech-content-container{
@@ -265,10 +269,10 @@ a:hover, a:active { text-decoration: none; }
 }
 .tech-img-container{
     
-  
 }
 .tech-container{
-    margin: 30px;
+    margin: 35px;
+     border-radius: 30px;
    
 }
 /* links */

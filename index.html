@@ -12,10 +12,31 @@
    
 </head>
 <body>
-<!-- 
+
 <div class='splash-container'>
     <div class='background-circle'></div>
-    <div class='welcome-body'>
+    <div class='background-dot' id='dot-1'></div>
+    <div class='background-dot' id='dot-2'></div>
+    <div class='background-dot' id='dot-3'></div>
+    <div class='background-dot' id='dot-4'></div>
+    <div class='background-dot' id='dot-5'></div>
+    <div class='background-dot' id='dot-6'></div>
+    <!-- <div class='sidebar'>
+        
+            <a href='' class='sidebar-container'> resume</a>
+        
+       
+            <a href='' target='_blank' class='sidebar-container'> github</a>
+     
+            <a href='' target='_blank' class='sidebar-container'> linkedin</a>
+        
+        
+            <a href='' class='sidebar-container'> projects</a>
+      
+
+    </div> -->
+
+    <section class='welcome-body'>
         <div class='myPicWrap'>
             <img src="./images/headshot.jpg" alt="" class='myPic'>
         </div>
@@ -30,10 +51,93 @@
             <div class='welcome-text-3'>
                 Software Developer
             </div>
+            
         </div>
-    </div>
+    </section>
 
-<div id="wrapper">
+    <section class='content1'>
+        <div class='project-title-container'>
+            Projects
+        </div>
+        <div class='projects-list'>
+            <div class='project-div-container'>
+                <div class='project-div'>
+                    <a href='https://edify-app.herokuapp.com/' target='_blank' class='card-link'>
+                        <div class='project-title'>
+                            Edify
+                        </div>
+                        <div class='proj-img-container'><img src="./images/Edify.png" class='project-img'></div>
+                        <div class='project-content'>
+                            A FullStack Spotify Clone
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class='project-div-container'>
+                <div class='project-div'>
+                    <a href='https://flashcode.herokuapp.com/' target='_blank' class='card-link'>
+                        <div class='project-title'>Flashcode</div>
+                        <div><img src="./images/Flashcode.png" class='project-img'></div>
+                        <div class='project-content'>
+                            A MERN Stack ANKI-inspired leetcode flashcard system
+                        </div>
+                    </a>
+                </div>
+            
+            </div>
+            
+            
+            
+            <div class='project-div-container'>
+                <div class='project-div'>
+                    <a href='https://ezhou0.github.io/Audio-visualizer/' target='_blank' class='card-link'>
+                        <div class='project-title'>
+                            Audio Visualizer
+                        </div>
+                        <div><img src="./images/AV.png" class='project-img'></div>
+                        <div class='project-content'>
+                            A Javascript application that creates customizable visualizations of audio
+                        </div>
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class='content1'>
+        
+         <div class='about-title-container'>
+             <h1>
+                about me
+             </h1>
+             <div class='about-link-container'>
+                <div>
+                    linkedin icon
+                </div>
+                <div>
+                    github icon
+                </div>
+             </div>
+         </div>
+         
+         <div class='about-content'>
+            lfa;alekjfawelkfjawe;lfkajel;
+        </div>
+       
+
+    </section>
+    <section class=content1>
+        Contact Me
+        edwinzhou99@gmail.com
+        github
+        linkedin
+    </section>
+    
+
+<!-- <div id="wrapper">
     <div class="box-area">
         <div id="box-front" class="box"></div>
         <div id="box-right" class="box"></div>
@@ -42,9 +146,12 @@
         <div id="box-top" class="box"></div>
         <div id="box-bottom" class="box"></div>
     </div>
-</div>
 </div> -->
-<div class='main-page'>
+
+
+</div>
+
+<!-- <div class='main-page'>
     
     <div class='main-cube-wrapper'>
         <div class="main-box-area">
@@ -134,7 +241,7 @@
                 <div class='tech-content-container'>
                 <div class='tech-container'>
                     <div class='tech-img-container'>
-                        <img src="./images/techpics/ruby.png" class='tech'>
+                        <img src="./images/techpics/ruby.png" class='tech need-border'>
                     </div>
                 </div>
                 <div class='tech-container'>
@@ -144,7 +251,7 @@
                 </div>
                 <div class='tech-container'>
                     <div class='tech-img-container'>
-                        <img src="./images/techpics/redux.png" class='tech'>
+                        <img src="./images/techpics/redux.png" class='tech need-border'>
                     </div>
                 </div>
                 <div class='tech-container'>
@@ -159,7 +266,7 @@
                 </div>
                 <div class='tech-container'>
                     <div class='tech-img-container'>
-                        <img src="./images/techpics/aws.png" class='tech'>
+                        <img src="./images/techpics/aws.png" class='tech need-border'>
                     </div>
                 </div>
                 <div class='tech-container'>
@@ -185,7 +292,7 @@
                     >github picture
                 </div>
             </div>
-            <!-- <div id="main-box-top" class="main-box">
+            <div id="main-box-top" class="main-box">
                 <div class='box-content'>
                top
                 </div>
@@ -194,8 +301,8 @@
                 <div class='box-content'>
                 bottom
                 </div>
-            </div> -->
-        
+            </div> 
+     
         </div >
 
     <div class='navbar'>
@@ -203,10 +310,11 @@
         <input type="radio" class='radio-right'name='radio-face' value='right'>
         <input type="radio" class='radio-back'name='radio-face' value='back'>
         <input type="radio" class='radio-left' name='radio-face' value='left'>
-        <!-- <input type="radio" class='radio-top'name='radio-face' value='top'>
-        <input type="radio" class='radio-bottom'name='radio-face' value='bottom'> -->
-    </div>
-</div>
+         <input type="radio" class='radio-top'name='radio-face' value='top'>
+        <input type="radio" class='radio-bottom'name='radio-face' value='bottom'> 
+    </div>  -->
+<!-- </div> -->
+
 
 <script src='rotate.js'></script>
     
