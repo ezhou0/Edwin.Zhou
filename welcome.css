@@ -37,7 +37,7 @@ button{
 }
 
 .navlink:hover{
-    color: lightgray
+    color: rgb(255, 255, 255)
 }
 
 .splash-container{
@@ -230,7 +230,8 @@ button{
 }
 
 .content1{
-    color: white;
+    /* color: white; */
+    color: rgb(226, 226, 226);
     
     height: 100vh;
 
@@ -280,7 +281,7 @@ button{
 }
 
 .project-page{
-    color: white;
+   color: rgb(226, 226, 226);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -417,7 +418,7 @@ button{
 
 .contact-page{
     height: 100vh;
-    color: white;
+   color: rgb(226, 226, 226);
     display:flex;
     flex-direction: column;
    
@@ -442,7 +443,8 @@ button{
 }
 
 .resume:hover{
-    color: lightgray;
+    color: white;
+    font-size: 101%;
 }
 
 .links-container{
@@ -456,9 +458,9 @@ button{
 .link{
     padding-left:10px;
     padding-right:10px;
-    color:white;
+   color: rgb(226, 226, 226);
 }
 .link:hover{
-    color: lightgray;
+    color: white;
 }
 
