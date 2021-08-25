@@ -8,7 +8,8 @@
 
     <link rel='stylesheet' href='style.css'>
     <link rel='stylesheet' href='welcome.css'>
-    <link rel='stylesheet' href='mainpage.css'>
+  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
    
 </head>
 <body>
@@ -21,21 +22,21 @@
     <div class='background-dot' id='dot-4'></div>
     <div class='background-dot' id='dot-5'></div>
     <div class='background-dot' id='dot-6'></div>
-    <!-- <div class='sidebar'>
-        
-            <a href='' class='sidebar-container'> resume</a>
-        
+    <div class='background-dot' id='dot-7'></div>
+    <div class='background-dot' id='dot-8'></div>
+    <div class='background-dot' id='dot-9'></div>
+    <div class='background-dot' id='dot-10'></div>
+    <div class='background-dot' id='dot-11'></div>
+   
+    <nav class='navbar'>
        
-            <a href='' target='_blank' class='sidebar-container'> github</a>
-     
-            <a href='' target='_blank' class='sidebar-container'> linkedin</a>
-        
-        
-            <a href='' class='sidebar-container'> projects</a>
-      
-
-    </div> -->
-
+       <div class='nav-links'>
+            <button class='navlink'>Resume</button>
+            <a class='navlink' target='_blank' href='https://github.com/ezhou0'><i class="fab fa-github fa-lg"></i></a>
+            <a class='navlink' target='_blank' href='https://www.linkedin.com/in/edwin-zhou-a231b31b6/'><i
+                    class="fab fa-linkedin fa-lg"></i></a>
+       </div>
+    </nav>
     <section class='welcome-body'>
         <div class='myPicWrap'>
             <img src="./images/headshot.jpg" alt="" class='myPic'>
@@ -62,15 +63,27 @@
         <div class='projects-list'>
 
            
+             <div class='hex no-proj' id='hex1'>
+            
+                <div class='shape'id='no-proj2' >
+                </div>
+            </div>
+            <div class='hex ' id='hex2'>
+            
+                <div class='shape' id='no-proj1'>
+                </div>
+            
+            </div>
+           
 
             <div class='hex' id='hex1'>
                
-                <div class='shape'>
+                <div class='shape' id='proj'>
                     <img src="./images/edifybg.png">
                     <a href='https://edify-app.herokuapp.com/'target='_blank'class='proj-content'>
                         <div>
                             <div>Edify</div>
-                            <p>A Spotify Clone</p>
+                            <p class='proj-desc'>A FullStack Spotify Clone</p>
                         </div>
                     </a>
                 </div>
@@ -78,72 +91,43 @@
             </div>
 
             <div class='hex' id='hex2'>
-                <div class='shape'>
+                <div class='shape'  id='proj'>
                     <img src="./images/flashcodebg.png">
-                    <div class='proj-content'>
+                    <a href='https://flashcode.herokuapp.com/#/'target='_blank'class='proj-content'>
                         <div>
                             <div>Flashcode</div>
-                            <p></p>
+                            <p class='proj-desc'>MERNstack ANKI-inspired flashcards</p>
+                           
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
            
             <div class='hex'id='hex3'>
-                <div class='shape'>
+                <div class='shape'  id='proj'>
                     <img src="./images/AVbg.png">
-                    <div class='proj-content'>
+                    <a href='https://ezhou0.github.io/Audio-visualizer/'target='_blank'class='proj-content'>
                         <div>
                             <div>Audio Visualizer</div>
-                            <p>asdfasdfsadf</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class='project-div-container'>
-                <div class='project-div'>
-                    <a href='https://edify-app.herokuapp.com/' target='_blank' class='card-link'>
-                        <div class='project-title'>
-                            Edify
-                        </div>
-                        <div class='proj-img-container'><img src="./images/Edify.png" class='project-img'></div>
-                        <div class='project-content'>
-                            A FullStack Spotify Clone
+                            <p class='proj-desc'>A customizable visualizations creator</p>
+                            <!-- <p class='proj-desc'>visualizations creator</p> -->
                         </div>
                     </a>
                 </div>
             </div>
+
+            <div class='hex no-proj' id='hex2'>
             
-            
-            <div class='project-div-container'>
-                <div class='project-div'>
-                    <a href='https://flashcode.herokuapp.com/' target='_blank' class='card-link'>
-                        <div class='project-title'>Flashcode</div>
-                        <div><img src="./images/Flashcode.png" class='project-img'></div>
-                        <div class='project-content'>
-                            A MERN Stack ANKI-inspired leetcode flashcard system
-                        </div>
-                    </a>
+                <div class='shape' id='no-proj1'>
                 </div>
             
             </div>
+            <div class='hex' id='hex1'>
             
-            
-            
-            <div class='project-div-container'>
-                <div class='project-div'>
-                    <a href='https://ezhou0.github.io/Audio-visualizer/' target='_blank' class='card-link'>
-                        <div class='project-title'>
-                            Audio Visualizer
-                        </div>
-                        <div><img src="./images/AV.png" class='project-img'></div>
-                        <div class='project-content'>
-                            A Javascript application that creates customizable visualizations of audio
-                        </div>
-                    </a>
+                <div class='shape' id='no-proj2'>
                 </div>
             
-            </div> -->
+            </div>
         </div>
     </section>
 
@@ -151,212 +135,49 @@
         
          <div class='about-title-container'>
              <h1>
-                about me
+               About Me
              </h1>
-             <div class='about-link-container'>
-                <div>
-                    linkedin icon
+                <div class='about-content'>
+                I am a software developer and recent graduate from the University of California, Los Angeles with a bachelors in Asian
+                American Studies. During Covid, I attended AppAcademy in order to learn how to code more extensively. I have experience in
+                MERN stack and Full-Stack projects and while I did enjoy both the frontend and backend aspects, I really fell in love
+                with frontend web development.
+
+                Outside of coding, I am also very passionate about dance. You can check out some of my performaces <a class='utube-link'target='_blank'
+                    href='https://www.youtube.com/watch?v=KuCwlx7ksuw&list=PLFfMg0FFSP1LnKu7TQiJC6Jsy90W7khBC'>here</a>.
+              
                 </div>
-                <div>
-                    github icon
-                </div>
-             </div>
          </div>
-         
-         <div class='about-content'>
-            lfa;alekjfawelkfjawe;lfkajel;
-        </div>
-       
+         <div>
+             <img src="./images/dance.png" class='about-img'>
+         </div>
+     
 
     </section>
-    <section class=content1>
-        Contact Me
-        edwinzhou99@gmail.com
-        github
-        linkedin
+    <section class='contact-page'>
+       
+        <div class='contact-info'>
+            <div class='email'>edwinzhou99@gmail.com</div>
+            <div class='resume'>Resume</div>
+            <div class='links-container'>
+                <a class='link' target='_blank' href='https://github.com/ezhou0'><i class="fab fa-github fa-lg"></i></a>
+                <a class='link'target='_blank' href='https://www.linkedin.com/in/edwin-zhou-a231b31b6/'><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+        </div>
+       
+       
+       
     </section>
     
 
-<!-- <div id="wrapper">
-    <div class="box-area">
-        <div id="box-front" class="box"></div>
-        <div id="box-right" class="box"></div>
-        <div id="box-back" class="box"></div>
-        <div id="box-left" class="box"></div>
-        <div id="box-top" class="box"></div>
-        <div id="box-bottom" class="box"></div>
-    </div>
-</div> -->
+
 
 
 </div>
 
-<!-- <div class='main-page'>
-    
-    <div class='main-cube-wrapper'>
-        <div class="main-box-area">
-            <div id="main-box-front" class="main-box">
-                <div class = 'box-content' id='about-me'>
-                    <div class='about-me-img'>
-                        <img src='./images//portrait.jpg' class='portrait'>
-                    </div>
-                    <div class='about-me'>
-                        <h1>about me</h1>
-                        <div>
-                           <h3>Hi, I'm Edwin Zhou. Nice to meet you!</h3> 
-                            <p>I am a software developer and recent graduate from the University of California, Los Angeles with a bachelors in Asian
-                            American Studies. During Covid, I attended AppAcademy in order to learn how to code more extensively. I have experience
-                            MERN stack and Full-Stack projects and while I did enjoy both the frontend and backend aspects, I really fell in love
-                            with frontend web development.</p>
-                           <p>I am currently interested in 3D computer graphics and have been working with Three.js.</p>
-                            <p>Outside of coding, I am also very passionate about dance. You can check out some of my performaces <a target='_blank'href='https://www.youtube.com/watch?v=KuCwlx7ksuw&list=PLFfMg0FFSP1LnKu7TQiJC6Jsy90W7khBC'>here</a>.</p>
-                           
-
-                        
-                        </div>
-                    </div>
-                    
-
-                </div>
-
-            </div>
-            <div id="main-box-right" class="main-box">
-                <div class='box-content' id='projects'>
-                    <div class='title-div'>
-                        <h1>Projects</h1>
-                    </div>
-            
-                    <div class='content-container'>
-                        <div class='project-div-container'>
-                            <div  class='project-div'>
-                            <a href='https://edify-app.herokuapp.com/' target='_blank' class='card-link'>
-                                <div class='project-title'>
-                                    Edify
-                                </div>
-                                <div class='proj-img-container'><img src="./images/Edify.png"  class='project-img'></div>
-                                <div class='project-content'> 
-                                    A FullStack Spotify Clone
-                                </div>
-                            </a>
-                            </div>
-                        </div>
-                    
-                    
-                        <div class='project-div-container'>
-                            <div class='project-div'>
-                                <a href='https://flashcode.herokuapp.com/' target='_blank' class='card-link'>
-                                <div class='project-title'>Flashcode</div>
-                                <div><img src="./images/Flashcode.png" class='project-img'></div>
-                                <div class='project-content'>
-                                   A MERN Stack ANKI-inspired leetcode flashcard system
-                                </div>
-                                </a>
-                            </div>
-                            
-                        </div>
-                        
-                        
-                        
-                        <div class='project-div-container'>
-                            <div class='project-div'>
-                                <a href='https://ezhou0.github.io/Audio-visualizer/' target='_blank'class='card-link'>
-                                <div class='project-title'>
-                                    Audio Visualizer
-                                </div>
-                                <div><img src="./images/AV.png"  class='project-img'></div>
-                                <div class='project-content'>
-                                    A Javascript application that creates customizable visualizations of audio
-                                </div>
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="main-box-back" class="main-box">
-                <div class='box-content' id='skills'>
-                <H1>technologies</H1>
-                <div class='tech-content-container'>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/ruby.png" class='tech need-border'>
-                    </div>
-                </div>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/react.png" class='tech'>
-                    </div>
-                </div>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/redux.png" class='tech need-border'>
-                    </div>
-                </div>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/js.png" class='tech'>
-                    </div>
-                </div>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/sql.png" class='tech'>
-                    </div>
-                </div>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/aws.png" class='tech need-border'>
-                    </div>
-                </div>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/html5.png" class='tech'>
-                    </div>
-                </div>
-                <div class='tech-container'>
-                    <div class='tech-img-container'>
-                        <img src="./images/techpics/css.png" class='tech'>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div id="main-box-left" class="main-box">
-                <div class='box-content' id='links'>
-                left
-
-                Links
-                    -similar to others, 
-                    >title:Github
-                    >github picture
-                </div>
-            </div>
-            <div id="main-box-top" class="main-box">
-                <div class='box-content'>
-               top
-                </div>
-            </div>
-            <div id="main-box-bottom" class="main-box">
-                <div class='box-content'>
-                bottom
-                </div>
-            </div> 
-     
-        </div >
-
-    <div class='navbar'>
-        <input type="radio" checked class='radio-front' name='radio-face' value='front'>
-        <input type="radio" class='radio-right'name='radio-face' value='right'>
-        <input type="radio" class='radio-back'name='radio-face' value='back'>
-        <input type="radio" class='radio-left' name='radio-face' value='left'>
-         <input type="radio" class='radio-top'name='radio-face' value='top'>
-        <input type="radio" class='radio-bottom'name='radio-face' value='bottom'> 
-    </div>  -->
-<!-- </div> -->
 
 
-<script src='rotate.js'></script>
+
     
 </body>
 </html>
