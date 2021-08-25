@@ -84,7 +84,8 @@
     border-radius: 50%;
     z-index: -1;
 
-  box-shadow:  -2px -2px 15px 4px rgba(236, 236, 236, 0.671);
+  box-shadow:  -2px -2px 15px 4px rgba(236, 236, 236, 0.671), 
+                inset 0 0 20px 3px lightcoral;
 
 }
 
@@ -187,7 +188,115 @@
     grid: 'text';
 }
 
-.projects-list{
-    overflow:scroll;
+.project-page{
+    color: white;
     height: 100vh;
+    display: flex;
+    
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.project-title-container{
+   margin-left: 20%;
+    font-size: 500%;
+    letter-spacing: 5px;
+}
+
+.projects-list{
+    display: flex;
+    flex-direction: column;
+   margin-left: 20%;
+    /* margin-left: 20%; */
+}
+
+.hex{
+    /* width: 22vh;
+    height: 25vh; */
+  
+     /* box-shadow: 0 0 10px gray; */
+   
+      
+     
+}
+
+
+.hex .shape{
+    /* top:0;
+    left: 0; */
+     width: 25vh;
+    height: 30vh;
+    background: white;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+
+    filter: drop-shadow(2px 1px 15px gray);
+     /* background-image: url('./images/Edify.png');
+     background-size: 22vh 30vh; */
+      /* transition: width 1s, height 1s; */
+       transition:1s;
+
+}
+
+.hex .shape:hover{
+     
+   width: 30vh;
+    height: 35vh;
+     /* background-size: 25vh 30vh; */
+   
+}
+
+.hex .shape img{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hex1{
+  
+   
+}
+#hex2{
+  margin-left:50%;
+    margin-top:-20%;
+    margin-bottom:-20%;
+}
+#hex3{
+  
+}
+
+.project-img{
+    width: 30vh;
+    height: 28vh;
+    
+   
+}
+
+.hex .shape .proj-content{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    font-size: large;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, rgba(201, 117, 209, 0.945), rgb(218, 218, 218));
+    opacity:0;
+
+    color:white;
+     transition:1s;
+
+}
+.hex .shape:hover .proj-content{
+    opacity: .9;
 }
