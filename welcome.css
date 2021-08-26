@@ -484,6 +484,10 @@ button{
 .contact-info div{
     padding-top: 40px;
 }
+.contact-info a{
+    color: white;
+
+}
 
 .resume:hover{
     color: white;
